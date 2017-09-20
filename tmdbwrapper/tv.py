@@ -1,4 +1,5 @@
 #tmdbwrapper/tv.py
+from . import *
 
 class TV(object):
     
@@ -6,4 +7,8 @@ class TV(object):
         self.id = id
 
     def info(self):
-        return {'id': self.id}
+        #print LINKS['info'].format(self.id)
+        #response = session.get(LINKS['info'].format(self.id))
+        path = "https://api.themoviedb.org/3/tv/{}".format(self.id)
+        response = session.get(path)
+        return response.json()

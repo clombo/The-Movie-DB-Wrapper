@@ -1,0 +1,27 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.11.1]
+    method: GET
+    uri: https://api.themoviedb.org/3/tv/1396?api_key=%270bacd6deccb1f98a193a26b66920fad8%27
+  response:
+    body: {string: !!python/unicode '{"status_code":7,"status_message":"Invalid API
+        key: You must be granted a valid key."}'}
+    headers:
+      access-control-allow-origin: ['*']
+      access-control-expose-headers: ['ETag, X-RateLimit-Limit, X-RateLimit-Remaining,
+          X-RateLimit-Reset, Retry-After']
+      connection: [keep-alive]
+      content-length: ['86']
+      content-type: [application/json;charset=utf-8]
+      date: ['Wed, 20 Sep 2017 12:45:53 GMT']
+      server: [openresty]
+      x-ratelimit-limit: ['40']
+      x-ratelimit-remaining: ['39']
+      x-ratelimit-reset: ['1505911563']
+    status: {code: 401, message: Unauthorized}
+version: 1
