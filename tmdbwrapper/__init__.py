@@ -6,8 +6,11 @@ import requests
 TMDB_API_KEY = os.environ.get('TMDB_API_KEY',None)
 
 #API endpoints
-LINKS = {
-    "info":"https://api.themoviedb.org/3/tv/{}",
+API_END_POINTS = {
+    "account": "https://api.themoviedb.org/3/account",
+    "movie": "https://api.themoviedb.org/3/movie",
+    "search": "https://api.themoviedb.org/3/search",
+    "info":"https://api.themoviedb.org/3/tv/",
     "popular":"https://api.themoviedb.org/3/tv/popular"
     }
 
