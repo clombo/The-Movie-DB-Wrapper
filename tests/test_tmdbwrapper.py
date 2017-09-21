@@ -1,4 +1,4 @@
-#tests/test_tmdbwrapper.py
+# tests/test_tmdbwrapper.py
 
 from pytest import fixture
 from tmdbwrapper import TV
@@ -13,7 +13,7 @@ def tv_keys():
             'overview', 'popularity', 'backdrop_path',
             'first_air_date', 'vote_count', 'vote_average']
 
-@vcr.use_cassette('tests/vcr_cassettes/tv-info.yml')
+@vcr.use_cassette('tests/vcr_cassettes/tv-info.yml', filter_query_parameters=['api_key'])
 def test_tv_info(tv_keys):
     """Tests an APO call to get a TV show's info """
 
@@ -23,3 +23,14 @@ def test_tv_info(tv_keys):
     assert isinstance(response,dict)
     assert response['id'] == 1396, "The ID should be in the response"
     assert set(tv_keys).issubset(response.keys()), "All keys should be in the respons"
+
+@vcr.use_cassette('tests/vcr_cassettes/tv-popular.yml', filter_query_parameters=['api_key'])
+def test_tv_popular(tv_keys):
+    """Test an API call to get popular tv shows"""
+
+    response = TV.popular()
+
+    assert isinstance(response,dict)
+    assert isinstance(response['results'],list)
+    assert isinstance(response['results'][0],dict)
+    assert set(tv_keys).issubset(response['results'][0].keys())

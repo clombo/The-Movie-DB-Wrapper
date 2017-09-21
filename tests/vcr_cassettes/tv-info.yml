@@ -7,21 +7,50 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.11.1]
     method: GET
-    uri: https://api.themoviedb.org/3/tv/1396?api_key=%270bacd6deccb1f98a193a26b66920fad8%27
+    uri: https://api.themoviedb.org/3/tv/1396
   response:
-    body: {string: !!python/unicode '{"status_code":7,"status_message":"Invalid API
-        key: You must be granted a valid key."}'}
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA31VW3PaOhD+Kxq/nBdDfAE75C00OSHNhaQ0JE2nw8j2YgtsyZVkDHTy38/KcWkS
+        6GEGxmhX+33f3vzLimi8TKQoZyXVmXViHUVb8bzIolKy4Vfvtr+s0yunhof5dPzUXZSpZVuxBKoh
+        mUUb6+T7L4sl1kkQBL5vW5wWgDGmjMdALlies5RyvFFKMWc57DDk9eRhIUOvD1s3vgonV9P1p0GV
+        jB3/W4Px8sO2oGRKJDCTFZ9pZuJ+7/XtXoimOZNKzyiTswSJYEDPcY47jttxBwiWApegdtTc4x2v
+        M0kL2gTPRAElTc1hpnV5cnRU13WXFnE3FsWRykStjiKUuWQ87UQ0wbBNLH8Q4BOfoaCkijUT3DqZ
+        01yBbeWUpxWGNMgWGNUJ4I8U+IOHyJpaP4zbR+qu33EGHc9Qb3kOW2QybJA56FrI5RtJYW/ne3rz
+        qVHEqyICORPzWZs4dA+8t+cKqBIcj/u2JSRLUUYsKq6lKaP1MDHsXs9pPvutBhEaLTvDYYpiBXLF
+        oP5gIUwRyslpAZLF+BBLLCRJTBmIhhxWTGEKiUIzKNL2Fd5IyGuC8U+0Ie/bqUsmoN/7MITIo+pn
+        BRK/NrmFmtzAmsXCJh/p6AyI0kJuiJiTR5prkOQxYxqvUTTIKk1z456xNCMqzoTISZxBwdC2QdIU
+        /0hSZ8IESxhNuVBIoWY6Qx6iBEmjHEheYQyUHKMz1Q1qBJhBbmIjckOjkd0lIyC6khy5CeSQszkY
+        jyZXdivS3DKSFeQNuwJ0RosyA00LxtENUyBkgmAYQ0FcSUAFiszRnG/+wQcsHo8Zzcm80sYawVwY
+        JywHkrCNssJEboQ0V4XEsmFKqgS4tslnUArIHePLwhRhBHSFoRsRNGdbSOw3okxyllzU3IQhpVDM
+        zIqJzzQWOqOSxph5ZXgrAIOMsVDJWptOMRmMheTGw8jOqELCwElOI2wbbBE0cw1FKSTFstSgMBo3
+        zdLEN40kZNdsHlFWOZVMb8z0HnfdIAwc15ybG7uF5G5g+lmsfbkQ3mJ4JSXLLm8WYSUmg3bp/Zl4
+        nJqipJy1O6YdiAuJ/T1llNztHM3Qm3H1Aqf/Yu88J4JvMI+xKYMiX3dj8HvHuE7ov3EfmUYcSpak
+        QM5Rs9SU8QJL0vr7ftjzzAbYzTeSer8bBx3H67ihWUTtUm0GHxdEG6IfhnspOeXpbfUQPU1iVl/z
+        hyedjIejn2W2vpVtSl4BZ68bxjpxDOm/LeUPwOEO2NsDdod3vfW31eD5ovc8HS2vQxGPt2wYTb6N
+        DgO7+8CoGLfq8T6w6++Q/T3kNNmePd4E/aVzI2t33Lv7977osXgZX08PI3t7yK5jkD33f5H7e8ib
+        xL8PHwMdri4fj78WTnLlTR+yyzHP/6K56ZD3yG7HCQ9W+Q1ysIecnY/HX+JBELifvtyVZ9Rzwtq9
+        qM5PbxaHkXv7yF6D3D+A/KfBjveQpb8NnVXFWSZPl4vL6/urx9GTc+Gtt+PDyP2myzXVFTa5dc4T
+        MK8evSmbqcJ9WermZCU0zCi+kZr3F8784N2ndfhNceCEL/8BGZ7a2wcJAAA=
     headers:
       access-control-allow-origin: ['*']
       access-control-expose-headers: ['ETag, X-RateLimit-Limit, X-RateLimit-Remaining,
           X-RateLimit-Reset, Retry-After']
+      cache-control: ['public, max-age=28800']
       connection: [keep-alive]
-      content-length: ['86']
+      content-encoding: [gzip]
+      content-length: ['1184']
       content-type: [application/json;charset=utf-8]
-      date: ['Wed, 20 Sep 2017 12:45:53 GMT']
+      date: ['Thu, 21 Sep 2017 05:45:54 GMT']
+      etag: [W/"1dde6c037cfe04272e9aa6bc22d51465"]
       server: [openresty]
+      vary: [Accept-Encoding]
+      x-memc: [HIT]
+      x-memc-age: ['3324']
+      x-memc-expires: ['25476']
+      x-memc-key: [c74db595fa187c90be00ec20cf9a07f6]
       x-ratelimit-limit: ['40']
       x-ratelimit-remaining: ['39']
-      x-ratelimit-reset: ['1505911563']
-    status: {code: 401, message: Unauthorized}
+      x-ratelimit-reset: ['1505972764']
+    status: {code: 200, message: OK}
 version: 1
